@@ -20,6 +20,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Overview
 
+This projet is a product page based on a FrontEnd Mentor Challenge
 ### The challenge
 
 Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
