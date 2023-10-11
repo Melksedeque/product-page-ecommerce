@@ -1,7 +1,8 @@
 .page-container {
     flex-flow: row wrap;
+    margin-top: 100px;
     .left, .right {
-        flex: 1 1 50%;
+        flex: 0 1 50%;
         padding: 0 50px;
     }
     .left {
@@ -9,6 +10,23 @@
             border-radius: 10px;
             overflow: hidden;
         }
-        div.thumbs-navigation {}
+        .thumbs-navigation {
+            ul {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    border-radius: 10px;
+                    flex: 0 1 auto;
+                    height: 90px;
+                    overflow: hidden;
+                    max-width: 90px;
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
     }
 }
