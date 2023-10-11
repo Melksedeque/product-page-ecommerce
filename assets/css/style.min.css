@@ -1,1 +1,1 @@
-*{box-sizing:border-box;margin:0;padding:0}.page-container{flex-flow:row wrap}.page-container .left,.page-container .right{flex:0 1 50%;padding:0 20px}/*# sourceMappingURL=style.min.css.map */
+*{box-sizing:border-box;margin:0;padding:0}.page-container{flex-flow:row wrap}.page-container .left,.page-container .right{flex:1 1 50%;padding:0 50px}.page-container .left figure.main-image{border-radius:10px;overflow:hidden}/*# sourceMappingURL=style.min.css.map */
