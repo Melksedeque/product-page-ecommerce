@@ -35,7 +35,7 @@
     <header class="page-header">
       <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand logo" href="#">
             <img src="./images/logo.svg" alt="" srcset="" />
           </a>
           <button
@@ -69,12 +69,27 @@
             </ul>
           </div>
           <div class="user-options">
-            <button class="btn btn-cart">
-              <img src="./images/icon-cart.svg" alt="" />
-            </button>
-            <button class="btn btn-user">
-              <img src="./images/image-avatar.png" alt="User Avatar" />
-            </button>
+            <div class="btn-group cart">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/icon-cart.svg" alt="" class="img-fluid" />
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+            
+            <div class="btn-group account">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/image-avatar.png" alt="User Avatar" class="img-fluid" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
