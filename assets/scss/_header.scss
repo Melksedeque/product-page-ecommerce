@@ -1,0 +1,26 @@
+header.page-header {
+    nav.navbar {
+        .logo {}
+        .navbar-nav {
+
+        }
+        .user-options {
+            .btn-group {
+                button {
+                    border: 0 none;
+                    box-shadow: none;
+                    outline: none;
+                    max-width: 45px;
+                    padding: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            .cart {}
+            .account {
+                margin-left: 30px;
+            }
+        }
+    }
+}
