@@ -1,8 +1,20 @@
 header.page-header {
     nav.navbar {
-        .logo {}
+        padding: 0;
+        .container {
+            border-bottom: 1px solid $grayish_blue;
+            padding: 30px 0;
+        }
+        .logo {
+            margin-right: 75px;
+            padding: 0;
+        }
         .navbar-nav {
-
+            li {
+                a {
+                    color: $grayish_blue;
+                }
+            }
         }
         .user-options {
             .btn-group {
