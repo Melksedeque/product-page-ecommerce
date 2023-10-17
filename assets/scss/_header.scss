@@ -3,7 +3,6 @@ header.page-header {
         padding: 0;
         .container {
             border-bottom: 1px solid $grayish_blue;
-            padding: 30px 0;
         }
         .logo {
             margin-right: 75px;
@@ -14,6 +13,26 @@ header.page-header {
                 margin: 0 10px;
                 a {
                     color: $grayish_blue;
+                    padding: 30px 0;
+                    position: relative;
+                    &:after {
+                        background-color: $orange;
+                        bottom: 0;
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        left: 50%;
+                        position: absolute;
+                        transform: translateX(-50%);
+                        transition: all .25s ease;
+                        width: 0%;
+                    }
+                    &:hover {
+                        color: $black;
+                        &::after {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
