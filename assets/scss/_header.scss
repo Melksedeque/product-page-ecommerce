@@ -12,7 +12,7 @@ header.page-header {
             li {
                 margin: 0 10px;
                 a {
-                    color: $grayish_blue;
+                    color: $dark_grayish_blue;
                     padding: 30px 0;
                     position: relative;
                     &:after {
@@ -49,9 +49,33 @@ header.page-header {
                     }
                 }
             }
-            .cart {}
+            .cart {
+                button {
+                    svg {
+                        fill: $dark_grayish_blue;
+                        transition: all .25s ease;
+                        &:hover {
+                            fill: $black;
+                        }
+                    }
+                }
+            }
             .account {
                 margin-left: 30px;
+                button {
+                    padding: 2px;
+                    border-radius: 50%;
+                    position: relative;
+                    &::before {
+                        background: $orange;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                    }
+                    &:hover {
+                        border: $orange;
+                    }
+                }
             }
         }
     }
