@@ -96,3 +96,50 @@ header.page-header {
         }
     }
 }
+
+@media (min-width: $screen-md) and (max-width: ($screen-lg - 1)) {}
+
+@media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {}
+
+@media (min-width: ($screen-xs + 1)) and (max-width: ($screen-sm - 1)) {}
+
+@media (max-width: $screen-xs) {
+    header.page-header {
+        nav.navbar {
+            .logo {
+                order: 2;
+            }
+            .offcanvas {
+                padding-top: 10px;
+                max-width: 65%;
+                .btn-close {
+                    box-shadow: none;
+                }
+            }
+            .navbar-nav {
+                order: 1;
+                li {
+                    a {
+                        color: $black;
+                        display: block;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        padding: 20px 0 10px;
+                        &:after {
+                            left: 0;
+                            transform: translateX(0);
+                        }
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .user-options {
+                order: 3;
+            }
+        }
+    }   
+}
