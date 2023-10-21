@@ -109,10 +109,11 @@ header.page-header {
         nav.navbar {
             .container {
                 align-items: center;
+                border: 0 none;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
-                padding: 1.5rem .75rem;
+                padding: 1rem .75rem;
             }
             .logo {
                 order: 2;
@@ -123,6 +124,27 @@ header.page-header {
                 max-width: 65%;
                 .btn-close {
                     box-shadow: none;
+                    svg {
+                        fill: $dark_grayish_blue;
+                    }
+                    &:hover {
+                        svg {
+                            fill: $black;
+                        }
+                    }
+                }
+            }
+            button.navbar-toggler {
+                border: 0;
+                margin-top: -5px;
+                margin-right: -50px;
+                svg {
+                    fill: dark_grayish_blue;
+                }
+                &:hover {
+                    svg {
+                        fill: $black;
+                    }
                 }
             }
             .navbar-nav {
