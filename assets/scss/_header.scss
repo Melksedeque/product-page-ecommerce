@@ -4,6 +4,12 @@ header.page-header {
         .container {
             border-bottom: 1px solid $grayish_blue;
         }
+        .navigation {
+            align-items: center;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+        }
         .logo {
             margin-right: 75px;
             padding: 0;
@@ -102,14 +108,11 @@ header.page-header {
 
 @media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {}
 
-@media (min-width: ($screen-xs + 1)) and (max-width: ($screen-sm - 1)) {}
-
-@media (max-width: $screen-xs) {
+@media (min-width: ($screen-xs + 1)) and (max-width: ($screen-sm - 1)) {
     header.page-header {
         nav.navbar {
             .container {
                 align-items: center;
-                border: 0 none;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
@@ -138,7 +141,6 @@ header.page-header {
             button.navbar-toggler {
                 border: 0;
                 margin-top: -5px;
-                margin-right: -50px;
                 svg path {
                     fill: $dark_grayish_blue;
                     transition: all .25s ease;
@@ -177,5 +179,73 @@ header.page-header {
                 order: 3;
             }
         }
-    }   
+    }
+}
+
+@media (max-width: $screen-xs) {
+    header.page-header {
+        nav.navbar {
+            .container {
+                border: 0 none;
+                padding: 1rem .75rem;
+            }
+            .logo {
+                order: 2;
+                margin-right: 0;
+            }
+            .offcanvas {
+                padding-top: 10px;
+                max-width: 65%;
+                button {
+                    box-shadow: none;
+                    svg path {
+                        fill: $dark_grayish_blue;
+                        transition: all .25s ease;
+                    }
+                    &:hover {
+                        svg path {
+                            fill: $black;
+                        }
+                    }
+                }
+            }
+            button.navbar-toggler {
+                border: 0;
+                margin-top: -5px;
+                svg path {
+                    fill: $dark_grayish_blue;
+                    transition: all .25s ease;
+                }
+                &:hover {
+                    svg path {
+                        fill: $black;
+                    }
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .navbar-nav {
+                order: 1;
+                li {
+                    a {
+                        color: $black;
+                        display: block;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        padding: 20px 0 10px;
+                        &:after {
+                            left: 0;
+                            transform: translateX(0);
+                        }
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
