@@ -4,7 +4,7 @@
     margin-top: 100px;
     .left, .right {
         flex: 0 1 50%;
-        padding: 0 50px;
+        padding: 0 70px;
     }
     .left {
         figure.main-image {
@@ -35,12 +35,12 @@
         h4 {
             color: $orange;
             font-size: 15px;
-            font-weight: 700;
+            font: 700 16px $font;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
         h1 {
-            font-weight: 700;
+            font: 700 40px $font;
         }
     }
 }
