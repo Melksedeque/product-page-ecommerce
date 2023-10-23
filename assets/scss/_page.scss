@@ -47,8 +47,36 @@
         .product-description {
             p {
                 color: $dark_grayish_blue;
-                font: 400 16px/25px $font;
+                font: 400 16px/30px $font;
                 margin-bottom: 25px;
+            }
+        }
+        .product-price {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            .current-price {
+                color: $black;
+                flex: 0 1 auto;
+                font: 700 36px $font;
+            }
+            .discount {
+                background-color: rgba($orange, .25);
+                border-radius: 5px;
+                color: $orange;
+                flex: 0 1 auto;
+                font: 700 16px $font;
+                margin-left: 30px;
+                padding: 5px 7px;
+            }
+            .old-price {
+                display: block;
+                color: $grayish_blue;
+                flex: 0 1 100%;
+                font: 700 16px $font;
+                margin-top: 10px;
+                text-decoration: line-through;
             }
         }
     }
