@@ -37,10 +37,19 @@
             font-size: 15px;
             font: 700 16px $font;
             letter-spacing: 2px;
+            margin-bottom: 20px;
             text-transform: uppercase;
         }
         h1 {
             font: 700 40px $font;
+            margin-bottom: 50px;
+        }
+        .product-description {
+            p {
+                color: $dark_grayish_blue;
+                font: 400 16px/25px $font;
+                margin-bottom: 25px;
+            }
         }
     }
 }
