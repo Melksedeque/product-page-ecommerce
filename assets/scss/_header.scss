@@ -106,7 +106,15 @@ header.page-header {
 
 @media (min-width: $screen-md) and (max-width: ($screen-lg - 1)) {}
 
-@media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {}
+@media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {
+    header.page-header {
+        nav.navbar {
+            .logo {
+                margin-right: 30px;
+            }
+        }
+    }
+}
 
 @media (min-width: ($screen-xs + 1)) and (max-width: ($screen-sm - 1)) {
     header.page-header {
