@@ -79,5 +79,12 @@
                 text-decoration: line-through;
             }
         }
+
+        .product-cta {
+            margin-top: 30px;
+            input {
+                max-width: 100px;
+            }
+        }
     }
 }
