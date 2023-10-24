@@ -1,7 +1,12 @@
 .attribution {
+    background-color: $grayish_blue;
     font-size: 11px;
+    padding: 15px;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+    &:hover {
+        color: $white;
+    }
 }
