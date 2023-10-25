@@ -1,7 +1,7 @@
-document.querySelectorAll('.quantity-input').forEach(function (e) {
-    const input = e.querySelector('input');
-    const minus = e.querySelector('.minus');
-    const plus = e.querySelector('.plus');
+document.querySelectorAll('.quantity-input').forEach(function (element) {
+    const input = element.querySelector('input');
+    const minus = element.querySelector('.minus');
+    const plus = element.querySelector('.plus');
   
     minus.addEventListener('click', function () {
         let value = parseFloat(input.value) || 0;
