@@ -87,32 +87,52 @@
             flex-flow: row wrap;
             margin-top: 30px;
             .quantity-input {
-                flex: 0 1 100px;
+                flex: 0 1 150px;
                 margin-right: 30px;
                 button, input {
                     background: $light_grayish_blue;
                     border: 0 none;
                     color: $orange;
-                    padding: 20px 10px;
+                    padding: 20px 15px;
                     text-align: center;
+                    &:hover {
+                        background: darken($light_grayish_blue, 5%);
+                    }
+                }
+                .minus {
+                    border-radius: 10px 0 0 10px;
                 }
                 input {
                     appearance: textfield;
                     color: $black;
                     font: 700 16px $font;
+                    &:hover {
+                        background-color: $light_grayish_blue;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+                .plus {
+                    border-radius: 0 10px 10px 0;
                 }
             }
             button.btn-add-to-cart {
+                align-items: center;
                 background: $orange;
-                box-shadow: 0 5px 20px rgba($orange, .5);
+                border-radius: 10px;
+                box-shadow: 0 15px 40px -10px rgba($orange, .5);
                 color: $white;
+                display: flex;
                 font: 700 15px $font;
-                padding: 19px 50px;
+                padding: 18px 70px;
                 svg {
                     fill: $white;
-                    transform: scale(.75);
+                    margin-right: 10px;
+                    transform: scale(.9);
                 }
                 &:hover {
+                    background: lighten($orange, 10%);
                 }
             }
         }
