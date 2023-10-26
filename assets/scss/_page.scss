@@ -95,9 +95,9 @@
                     color: $orange;
                     padding: 20px 15px;
                     text-align: center;
-                    &:hover {
-                        background: darken($light_grayish_blue, 5%);
-                    }
+                    // &:hover {
+                    //     background: darken($light_grayish_blue, 5%);
+                    // }
                 }
                 .minus {
                     border-radius: 10px 0 0 10px;
@@ -132,7 +132,7 @@
                     transform: scale(.9);
                 }
                 &:hover {
-                    background: lighten($orange, 10%);
+                    background: lighten($orange, 15%);
                 }
             }
         }
