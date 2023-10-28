@@ -25,6 +25,7 @@
                     height: 90px;
                     overflow: hidden;
                     max-width: 90px;
+                    transition: all .25s ease;
                     img {
                         object-fit: cover;
                         object-position: center;
