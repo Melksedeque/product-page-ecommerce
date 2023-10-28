@@ -24,7 +24,9 @@ cartButton.addEventListener('click', () => {
     let productDiscount = document.querySelector('.product-info [data-price="discount"]').innerHTML
     let productOldPrice = document.querySelector('.product-info [data-price="old-price"]').innerHTML
     let productQuantity = document.querySelector('.product-info [data-product-quantity]').value
-
+    
+    const cartContainer = document.querySelector('header nav [data-cart]')
+    
     console.log(productName)
     console.log(productCurrentPrice)
     console.log(productDiscount)
