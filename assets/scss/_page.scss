@@ -18,14 +18,23 @@
                 display: flex;
                 justify-content: space-between;
                 li {
+                    border: 2px solid transparent;
                     border-radius: 10px;
+                    cursor: pointer;
                     flex: 0 1 auto;
                     height: 90px;
                     overflow: hidden;
                     max-width: 90px;
+                    transition: all .25s ease;
                     img {
                         object-fit: cover;
                         object-position: center;
+                    }
+                    &:hover {
+                        border-color: $orange;
+                        img {
+                            opacity: .5;
+                        }
                     }
                 }
             }
