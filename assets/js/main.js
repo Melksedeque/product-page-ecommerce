@@ -27,6 +27,13 @@ cartButton.addEventListener('click', () => {
     let productQuantity = document.querySelector('.product-info [data-product-quantity]').value
     
     const cartContainer = document.querySelector('header nav [data-cart]')
+    const emptyCartContainer = document.querySelector('header nav [data-cart] [data-empty-cart]')
+    const filledCartContainer = document.querySelector('header nav [data-cart] [data-filled-cart]')
+    
+    emptyCartContainer.classList.remove('d-flex')
+    emptyCartContainer.classList.add('d-none')
+    filledCartContainer.classList.remove('d-none')
+    filledCartContainer.classList.add('d-flex')
 
     console.log(productName)
     console.log(productMainImage)
@@ -34,4 +41,8 @@ cartButton.addEventListener('click', () => {
     console.log(productDiscount)
     console.log(productOldPrice)
     console.log(productQuantity)
+
+    console.log(cartContainer)
+    console.log(emptyCartContainer)
+    console.log(filledCartContainer)
 })
