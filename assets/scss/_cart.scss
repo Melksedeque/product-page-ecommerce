@@ -5,6 +5,7 @@ header.page-header {
                 .dropdown-menu {
                     left: -150px;
                     padding: 0;
+                    margin-top: 10px;
                     width: 300px;
                 }
                 h3 {
@@ -16,12 +17,10 @@ header.page-header {
                 .cart-empty {
                     align-items: center;
                     justify-content: center;
-                    display: flex;
                     height: 200px;
                     padding: 20px;
                 }
                 .cart-filled {
-                    display: none;
                 }
             }
         }
