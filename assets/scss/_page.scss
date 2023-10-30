@@ -29,6 +29,7 @@
                     img {
                         object-fit: cover;
                         object-position: center;
+                        transition: all .25s ease;
                     }
                     &:hover {
                         border-color: $orange;
