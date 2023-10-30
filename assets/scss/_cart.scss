@@ -14,16 +14,17 @@ header.page-header {
                     font: 700 16px $font;
                     padding: 15px 20px;
                 }
-                .cart-empty {
+                .cart-info {
                     align-items: center;
                     justify-content: center;
-                    height: 200px;
+                    min-height: 150px;
                     padding: 20px;
-                }
-                .cart-filled {
-                    align-items: center;
-                    flex-flow: column nowrap;
-                    justify-content: center;
+                    &.filled {
+                        align-items: center;
+                        flex-flow: column nowrap;
+                        justify-content: center;
+                        padding: 20px;
+                    }
                     button.btn-checkout-cart {
                         align-items: center;
                         background: $orange;
