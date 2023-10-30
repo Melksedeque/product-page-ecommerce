@@ -21,8 +21,9 @@ header.page-header {
                     padding: 20px;
                 }
                 .cart-filled {
-                    display: flex;
+                    align-items: center;
                     flex-flow: column nowrap;
+                    justify-content: center;
                     button.btn-checkout-cart {
                         align-items: center;
                         background: $orange;
@@ -31,7 +32,7 @@ header.page-header {
                         color: $white;
                         display: flex;
                         font: 700 15px $font;
-                        padding: 18px 70px;
+                        padding: 10px 30px;
                         text-align: center;
                         width: 100%;
                         svg {
