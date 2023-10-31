@@ -23,6 +23,37 @@ header.page-header {
                 .cart-filled {
                     display: flex;
                     flex-flow: column nowrap;
+                    ul.products-in-cart {
+                        padding: 20px;
+                        li.item {
+                            align-items: center;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: space-between;
+                            figure.img-item, span.item-title, button.item-delete {
+                                flex: 0 1 auto;
+                            }
+                            figure.img-item {
+                                border-radius: 5px;
+                                height: 40px;
+                                overflow: hidden;
+                                width: 40px;
+                                img {
+                                    max-height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            span.item-title {
+                                font-size: 14px;
+                                strong {
+                                    font-weight: bold;
+                                }
+                            }
+                            button.item-delete {
+                                background: none;
+                            }
+                        }
+                    }
                     button.btn-checkout-cart {
                         align-items: center;
                         background: $orange;
