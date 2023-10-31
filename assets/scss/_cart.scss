@@ -43,13 +43,23 @@ header.page-header {
                                     }
                                 }
                                 span.item-title {
-                                    font-size: 14px;
+                                    color: $dark_grayish_blue;
+                                    font: normal 13px/23px $font;
                                     strong {
+                                        color: $black;
                                         font-weight: bold;
                                     }
                                 }
                                 button.item-delete {
                                     background: none;
+                                    svg {
+                                        fill: $grayish_blue;
+                                    }
+                                    &:hover {
+                                        svg {
+                                            fill: $black;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -61,6 +71,7 @@ header.page-header {
                             color: $white;
                             display: flex;
                             font: 700 15px $font;
+                            margin-top: 30px;
                             padding: 10px 30px;
                             text-align: center;
                             width: 100%;
