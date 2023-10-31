@@ -14,64 +14,64 @@ header.page-header {
                     font: 700 16px $font;
                     padding: 15px 20px;
                 }
-                .cart-empty {
+                .cart-info {
                     align-items: center;
                     justify-content: center;
-                    height: 200px;
+                    min-height: 150px;
                     padding: 20px;
-                }
-                .cart-filled {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    ul.products-in-cart {
-                        padding: 20px;
-                        li.item {
-                            align-items: center;
-                            display: flex;
-                            flex-flow: row nowrap;
-                            justify-content: space-between;
-                            figure.img-item, span.item-title, button.item-delete {
-                                flex: 0 1 auto;
-                            }
-                            figure.img-item {
-                                border-radius: 5px;
-                                height: 40px;
-                                overflow: hidden;
-                                width: 40px;
-                                img {
-                                    max-height: 100%;
-                                    object-fit: cover;
-                                }
-                            }
-                            span.item-title {
-                                font-size: 14px;
-                                strong {
-                                    font-weight: bold;
-                                }
-                            }
-                            button.item-delete {
-                                background: none;
-                            }
-                        }
-                    }
-                    button.btn-checkout-cart {
-                        align-items: center;
-                        background: $orange;
-                        border-radius: 10px;
-                        box-shadow: 0 15px 40px -10px rgba($orange, .5);
-                        color: $white;
+                    &.filled {
                         display: flex;
-                        font: 700 15px $font;
-                        padding: 18px 70px;
-                        text-align: center;
-                        width: 100%;
-                        svg {
-                            fill: $white;
-                            margin-right: 10px;
-                            transform: scale(.9);
+                        flex-flow: column nowrap;
+                        ul.products-in-cart {
+                            padding: 20px;
+                            li.item {
+                                align-items: center;
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: space-between;
+                                figure.img-item, span.item-title, button.item-delete {
+                                    flex: 0 1 auto;
+                                }
+                                figure.img-item {
+                                    border-radius: 5px;
+                                    height: 40px;
+                                    overflow: hidden;
+                                    width: 40px;
+                                    img {
+                                        max-height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                                span.item-title {
+                                    font-size: 14px;
+                                    strong {
+                                        font-weight: bold;
+                                    }
+                                }
+                                button.item-delete {
+                                    background: none;
+                                }
+                            }
                         }
-                        &:hover {
-                            background: lighten($orange, 15%);
+                        button.btn-checkout-cart {
+                            align-items: center;
+                            background: $orange;
+                            border-radius: 10px;
+                            box-shadow: 0 15px 40px -10px rgba($orange, .5);
+                            color: $white;
+                            display: flex;
+                            font: 700 15px $font;
+                            padding: 10px 30px;
+                            text-align: center;
+                            width: 100%;
+                            svg {
+                                fill: $white;
+                                margin-right: 10px;
+                                transform: scale(.9);
+                            }
+                            &:hover {
+                                background: lighten($orange, 15%);
+                            }
                         }
                     }
                 }
