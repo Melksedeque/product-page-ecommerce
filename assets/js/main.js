@@ -49,7 +49,7 @@ cartButton.addEventListener('click', () => {
     const itemTitle = document.createElement('span');
     itemTitle.className = 'item-title';
 
-    const itemText = document.createTextNode(productName + ' ' + productCurrentPrice);
+    const itemText = document.createTextNode(productName + '<br>' + productCurrentPrice + ' ' + productQuantity + ' ' + );
     itemTitle.appendChild(itemText);
 
     const deleteButton = document.createElement('button');
