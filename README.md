@@ -21,6 +21,9 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 ## Overview
 
 This projet is a product page based on a FrontEnd Mentor Challenge. The main function is to simulate a product page with add to cart and delete from cart.
+
+This project features an interactive product page developed with pure HTML, CSS, and JavaScript. It allows users to view product details, add it to the shopping cart, and remove products from the cart. The total cart price is dynamically calculated based on the quantity of products selected and the unit price of each item.
+
 ### The challenge
 
 Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
