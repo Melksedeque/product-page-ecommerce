@@ -33,6 +33,12 @@ This project features an interactive product page developed with pure HTML, CSS,
 - Visual feedback for the user, showing the number of products in the cart.
 - Responsive user interface that adapts to different screen sizes.
 
+### How to use
+
+1. Clone or download this repository to your computer.
+2. Open the index.html file in your web browser.
+3. Explore the product page and try out the features for adding and removing products from the cart.
+
 ### The challenge
 
 Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
