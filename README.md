@@ -24,6 +24,15 @@ This projet is a product page based on a FrontEnd Mentor Challenge. The main fun
 
 This project features an interactive product page developed with pure HTML, CSS, and JavaScript. It allows users to view product details, add it to the shopping cart, and remove products from the cart. The total cart price is dynamically calculated based on the quantity of products selected and the unit price of each item.
 
+### Functionalities
+
+- View product details including image, name, description and unit price.
+- Adding products to the shopping cart by clicking the "Add to Cart" button.
+- Removing products from the shopping cart with the "Remove" button in the list of products in the cart.
+- Automatic calculation of total cart price as products are added or removed.
+- Visual feedback for the user, showing the number of products in the cart.
+- Responsive user interface that adapts to different screen sizes.
+
 ### The challenge
 
 Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
