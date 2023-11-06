@@ -68,5 +68,5 @@ cartButton.addEventListener('click', () => {
     newItem.appendChild(itemTitle)
     newItem.appendChild(deleteButton)
 
-    filledCartContainer.appendChild(newItem)
+    cartList.appendChild(newItem)
 })
