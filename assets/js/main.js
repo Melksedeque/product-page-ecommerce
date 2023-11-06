@@ -36,13 +36,6 @@ cartButton.addEventListener('click', () => {
     filledCartContainer.classList.remove('d-none')
     filledCartContainer.classList.add('d-flex')
 
-    console.log('productName:', productName)
-    console.log('productMainImage:', productMainImage)
-    console.log('productCurrentPrice:', productCurrentPrice)
-    console.log('productDiscount:', productDiscount)
-    console.log('productOldPrice:', productOldPrice)
-    console.log('productQuantity:', productQuantity)
-
     const newItem = document.createElement('li')
     newItem.className = 'item'
 
