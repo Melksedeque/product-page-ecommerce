@@ -35,6 +35,8 @@ cartButton.addEventListener('click', () => {
 
     const newItem = document.createElement('li')
     newItem.className = 'item'
+    const uniqueId = Math.floor(Math.random() * 100000)
+    newItem.setAttribute('data-id', uniqueId)
 
     const figure = document.createElement('figure')
     figure.className = 'img-item'
