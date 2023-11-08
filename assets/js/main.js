@@ -47,8 +47,12 @@ addToCartButton.addEventListener('click', () => {
 
     if (existingItem) {
         const existingQuantity = parseInt(existingItem.querySelector('.item-quantity').textContent, 10)
+        const productValue = productCurrentPrice.replace(/[^0-9.-]/g, '')
         const newQuantity = existingQuantity + productQuantity
+        let newTotalPrice = productValue * newQuantity
+        
         existingItem.querySelector('.item-quantity').textContent = newQuantity
+        existingItem.querySelector('.item-total-price').textContent = `$${newTotalPrice.toFixed(2)}`
     } else {
         const newItem = document.createElement('li')
         newItem.className = 'item'
@@ -67,7 +71,7 @@ addToCartButton.addEventListener('click', () => {
 
         const productValue = productCurrentPrice.replace(/[^0-9.-]/g, '')
         let totalPrice = parseFloat(productValue) * productQuantity
-        const formattedTotalPrice = `<strong>$${totalPrice.toFixed(2)}`
+        const formattedTotalPrice = `<strong class="item-total-price">$${totalPrice.toFixed(2)}`
 
         itemTitle.innerHTML = `${productName}<br>${productCurrentPrice} x <span class="item-quantity">${productQuantity}</span> ${formattedTotalPrice}`
 
