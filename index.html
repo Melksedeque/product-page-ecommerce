@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -14,9 +13,17 @@
 
     <title>Frontend Mentor | E-commerce product page</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -43,12 +50,27 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"/></svg>
+              <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" />
+              </svg>
             </button>
             <div class="offcanvas offcanvas-start" id="navbarNavDropdown">
               <div class="offcanvas-header">
-                <button type="button" class="btn btn-link" data-bs-dismiss="offcanvas" aria-label="Close">
-                  <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"/></svg>
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <svg
+                    width="14"
+                    height="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                    />
+                  </svg>
                 </button>
               </div>
               <div class="offcanvas-body">
@@ -74,8 +96,20 @@
           </div>
           <div class="user-options">
             <div class="btn-group cart">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" data-name="user-options-cart">
-                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill-rule="nonzero"/></svg>
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="false"
+                aria-expanded="false"
+                data-name="user-options-cart"
+              >
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
               </button>
               <div class="dropdown-menu" data-cart>
                 <h3>Cart</h3>
@@ -83,16 +117,31 @@
                   <p>Your cart is empty.</p>
                 </div>
                 <div class="cart-info filled d-none" data-filled-cart>
-                  <ul class="products-in-cart">
-                  </ul>
-                  <button type="button" class="btn btn-checkout-cart" data-checkout="checkout">Checkout</button>
+                  <ul class="products-in-cart"></ul>
+                  <button
+                    type="button"
+                    class="btn btn-checkout-cart"
+                    data-checkout="checkout"
+                  >
+                    Checkout
+                  </button>
                 </div>
               </div>
             </div>
-            
+
             <div class="btn-group account">
-              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-name="user-options-account">
-                <img src="./images/image-avatar.png" alt="User Avatar" class="img-fluid" />
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-name="user-options-account"
+              >
+                <img
+                  src="./images/image-avatar.png"
+                  alt="User Avatar"
+                  class="img-fluid"
+                />
               </button>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Menu item</a></li>
@@ -112,7 +161,11 @@
         <div class="left">
           <figure class="main-image">
             <a href="" data-main-image>
-              <img src="./images/image-product-1.jpg" alt="" class="img-fluid" />
+              <img
+                src="./images/image-product-1.jpg"
+                alt=""
+                class="img-fluid"
+              />
             </a>
           </figure>
           <section
@@ -123,16 +176,28 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="./images/image-product-1-thumbnail.jpg" alt="Image Product 1" />
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="Image Product 1"
+                  />
                 </li>
                 <li class="splide__slide">
-                  <img src="/images/image-product-2-thumbnail.jpg" alt="Image Product 2" />
+                  <img
+                    src="/images/image-product-2-thumbnail.jpg"
+                    alt="Image Product 2"
+                  />
                 </li>
                 <li class="splide__slide">
-                  <img src="./images/image-product-3-thumbnail.jpg" alt="Image Product 3" />
+                  <img
+                    src="./images/image-product-3-thumbnail.jpg"
+                    alt="Image Product 3"
+                  />
                 </li>
                 <li class="splide__slide">
-                  <img src="./images/image-product-4-thumbnail.jpg" alt="Image Product 4" />
+                  <img
+                    src="./images/image-product-4-thumbnail.jpg"
+                    alt="Image Product 4"
+                  />
                 </li>
               </ul>
             </div>
@@ -150,18 +215,63 @@
               </p>
             </div>
             <div class="product-price">
-              <span data-price="current-price" class="current-price">$125.00</span>
+              <span data-price="current-price" class="current-price"
+                >$125.00</span
+              >
               <span data-price="discount" class="discount">50%</span>
               <span data-price="old-price" class="old-price">$250.00</span>
             </div>
             <div class="product-cta">
               <div class="quantity-input input-group">
-                <button class="minus"><svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg></button>
-                <input type="number" min="1" max="999" value="1" class="form-control number-input" data-product-quantity readonly>
-                <button class="plus"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg></button>
-              </div>            
+                <button class="minus">
+                  <svg
+                    width="12"
+                    height="4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <path
+                        d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                        id="a"
+                      />
+                    </defs>
+                    <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
+                  </svg>
+                </button>
+                <input
+                  type="number"
+                  min="1"
+                  max="999"
+                  value="1"
+                  class="form-control number-input"
+                  data-product-quantity
+                  readonly
+                />
+                <button class="plus">
+                  <svg
+                    width="12"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <path
+                        d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                        id="b"
+                      />
+                    </defs>
+                    <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
+                  </svg>
+                </button>
+              </div>
               <button class="btn btn-add-to-cart" data-add-to-cart>
-                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill-rule="nonzero"/></svg>
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
                 Add to Cart
               </button>
             </div>
@@ -186,6 +296,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
