@@ -1,3 +1,9 @@
 Fancybox.bind("[data-fancybox]", {
-    // Your custom options
+    Carousel: {
+        infinite: true,
+        transition: "classic",
+    },
+    Thumbs: {
+        type: "classic",
+    },
 });
