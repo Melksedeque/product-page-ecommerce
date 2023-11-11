@@ -37,6 +37,9 @@
                             opacity: .5;
                         }
                     }
+                    &.selected {
+                        border-color: $orange;
+                    }
                 }
             }
         }
