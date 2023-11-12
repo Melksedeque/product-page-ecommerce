@@ -39,6 +39,9 @@
                     }
                     &.selected {
                         border-color: $orange;
+                        img {
+                            opacity: .5;
+                        }
                     }
                 }
             }
