@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
   lightbox.classList.add("lightbox")
   document.body.appendChild(lightbox)
 
-  // Função para mudar a imagem principal
+    // Função para mudar a imagem principal
   function changeMainImage(imgSrc) {
     mainImage.src = imgSrc
   }
 
-  // Evento de clique nas miniaturas
+    // Evento de clique nas miniaturas
   thumbnails.forEach((thumb) => {
     thumb.addEventListener("click", function () {
       changeMainImage(this.dataset.target)
