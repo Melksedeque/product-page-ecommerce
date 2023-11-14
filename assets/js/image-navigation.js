@@ -1,18 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mainImage = document.querySelector(".main-image img")
-  const thumbnails = document.querySelectorAll(".thumbs-navigation img")
+  const thumbnails = document.querySelectorAll(".thumbs-navigation ul li")
   const lightbox = document.createElement("div")
   lightbox.classList.add("lightbox")
   document.body.appendChild(lightbox)
 
-    // Função para mudar a imagem principal
+  // Função para mudar a imagem principal
   function changeMainImage(imgSrc) {
     mainImage.src = imgSrc
   }
 
-    // Evento de clique nas miniaturas
+  // Evento de clique nas miniaturas
   thumbnails.forEach((thumb) => {
     thumb.addEventListener("click", function () {
+      alert("Teste")
       changeMainImage(this.dataset.target)
     })
   })
