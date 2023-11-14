@@ -58,7 +58,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## Screenshot
 
-![Screenshot](./screenshot.png)
+![Screenshot Desktop](./screenshot.png)
+![Screenshot Mobile](./screenshot-mobile.png)
 
 In these images you can see the layout in the desktop version and in the mobile version 375px as requested by the challenge.
 
