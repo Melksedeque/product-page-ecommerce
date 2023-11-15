@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 250)
   }
 
-  // Evento de clique nas miniaturas
   thumbnails.forEach((thumb) => {
     thumb.addEventListener("click", function () {
       let imgSrc = this.src
