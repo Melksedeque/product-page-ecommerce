@@ -65,8 +65,8 @@ In these images you can see the layout in the desktop version and in the mobile 
 
 ### Links
 
-//- Solution URL: [Add solution URL here](https://your-solution-url.com)
-//- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
 
 ## My process
 
